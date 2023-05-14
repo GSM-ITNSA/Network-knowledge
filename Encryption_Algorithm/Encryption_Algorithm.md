@@ -81,3 +81,45 @@
 - 비대칭키에 비해 암호화와 복호화 속도가 빠릅니다.
 - 하지만 교환 당사자간에 동일한 키를 공유해야하기 때문에 키 관리의 어려움이 있다.
 - 또한 잦은 키 변경이 있는 경우에 불편함을 초래한다.
+
+### 4-2.1 DES 알고리즘
+
+- Data Encryption Standard.
+- 평문을 64비트로 나눠 56비트의 키를 이용해 다시 64비트의 암호문을 만들어 내는 알고리즘
+
+![Untitled](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FddmrN1%2FbtrbtoJCiDF%2FeuecUhWqO80gmE12WMqLZ1%2Fimg.png)
+
+### 4-2.2 3DES 알고리즘
+
+- DES 알고리즘을 **3중**으로 만들어 DES 암호를 보완한 암호 알고리즘입니다.
+- 암호화-암호화-암호화 방법이 아닌, 암호화-복호화-암호화 방법으로 암호화를 합니다.
+
+![Untitled](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbKuhMO%2Fbtrbor8jqnY%2FXLRYuP8fhCaGpSSOmrSfY0%2Fimg.png)
+
+### 4-2.3 AES 알고리즘
+
+- DES에 대해 공격방법이 알려지면서 더욱 보완된 AES 알고리즘이다.
+- 128 비트 암호화 블록, 다양한 키의 길이(128,192,256)를 갖춘 대칭형 알고리즘.
+- AES는 대입 치환 **SPN**(**S**ubstitution-**P**ermutation **N**etwork)을 사용하여 암호화하는 방법이고 전체 bit를 암호화 하는 방식을 사용한다.공
+
+![Untitled](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fx60Ea%2FbtrbkXl5YAq%2FjVNVJBMmIfOC1BQde9x05k%2Fimg.png)
+
+## 5. 비대칭키 암호화 알고리즘
+
+- **공개키** 암호화 알고리즘
+- 비대칭키는 암호화할 때의 키와 복호화할 떄의 키가 다른것을 의미한다.
+- **공개키(Public Key)와 개인키(Private Key)**
+- 한 쌍의 키가 존재하며, 하나는 특정 사람만이 가지는 개인키(또는 비밀키)이고 다른 하나는 누구나 가질 수 있는 공개키이다.
+- 공개키와 개인키는 기능히 완전 같다.
+- 공개키로 암호화 하는 방식 vs 개인키로 암호화 하는 방식
+    - 공개키 암호화는 데이터 보안에 중점을 둔것.
+    - 개인키 암호화는 인증 과정에 중점을 둔것.
+
+![Untitled](https://blog.kakaocdn.net/dn/bi9uLq/btrbllnjBl8/QzYfVM7KmH6EYVOVSiQs0k/img.png
+)
+
+### 5-1. RSA 알고리즘
+
+- RSA는 창시자들의 이름 앞글자를 따서 지었다 (Ron **R**ivest, Adi **S**hamir, Leonard **A**dleman)
+- 최초로 암호화 + 전자서명이 가능한 알고리즘.
+- RSA는 큰 정수의 **소인수 분해의 난해함**에 기반하여, 공개키만을 가지고는 개인키를 쉽게 짐작할 수 없도록 디자인되어 있다.
