@@ -13,7 +13,7 @@
 ## EIGRP의 장점😁
 
 - Fast Convergence  - 빠른 수렴
-- Unequal Cost - 부하분산 (RR) 지원
+- Unequal Cost - 부하분산 (RR) 지원한다.
 - OSPF에 비해 설정이 간단하다
 
 ## EIGRP의 단점😅
