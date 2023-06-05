@@ -4,7 +4,7 @@
 - Cisco에서 제작한 Cisco 전용 프로토콜
 - DUAL(Diffusing Update Algorithm) 알고리즘 사용하여 최적경로와 후속경로 선출
 - Router 정보 전송을 위해 IP 프로토콜 88번 사용
-- AD 값은 내부 90, 외부 170이다.
+- AD 값은 내부 90, 외부 170임.
     - 목적지가 같은 경로가 있을 때 사용되는 우선순위
 - AS(Autonomous System) 단위로 구성
     - AS = 독립적인 네트워크
